@@ -49,6 +49,14 @@ jobs:
       working-directory: src
       run: chmod -R 777 storage bootstrap/cache
 
+    - name: Cache Composer dependencies
+      uses: actions/cache@v3
+      with:
+        path: src/vendor
+        key: ${{ runner.os }}-composer-${{ hashFiles('src/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-composer-
+          
     # 7. テストを実行
     - name: Run tests
       working-directory: src
