@@ -1,3 +1,12 @@
+# Laravel TDD CICD
+
+![Run Tests](https://github.com/sbtest1218-oss/csd_0129/workflows/Run%20Tests/badge.svg)
+
+## 概要
+
+TDDで開発したTodoアプリです。
+CI/CDでテストを自動化しています。
+
 # Laravel Docker Environment
 
 - Udemyのフルスタックエンジニアになるためのスキルの学び方を学習するためのレポジトリです
